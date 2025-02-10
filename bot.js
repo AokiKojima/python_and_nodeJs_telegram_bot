@@ -32,12 +32,12 @@ bot.on('message', msg => {
     // ID чата
     const chatId = msg.chat.id;
 
-    // Проверяем, что text определен и не является undefined
+    // Проверяем, что текст определен 
     if (typeof text !== 'undefined') {
 
         const { spawn } = require('child_process');
 
-        // Путь к вашему файлу Python
+        // Путь к файлу Python
         const pythonScriptPath = 'output.py';
 
         // Аргументы для передачи в Python скрипт
@@ -55,7 +55,7 @@ bot.on('message', msg => {
         // Обработка события завершения выполнения Python скрипта
         pythonProcess.on('close', (code) => {
             console.log('Python скрипт завершился с кодом ${code}');
-            // Проверяем длину сообщения
+            // Проверка длины сообщения
             if (pythonOutput.length > 4000) {
                 sendLongMessage(chatId, pythonOutput);
             } else {
