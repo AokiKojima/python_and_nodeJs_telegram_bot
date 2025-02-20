@@ -1,7 +1,17 @@
 {
   "dependencies": {
+    "@cypress/request": "^3.0.5",
+    "@cypress/request-promise": "^5.0.0",
+    "array.prototype.findindex": "^2.2.3",
+    "aws-sign2": "^0.7.0",
+    "bl": "^1.2.3",
+    "debug": "^3.2.7",
+    "eventemitter3": "^3.1.2",
+    "file-type": "^3.9.0",
+    "mime": "^1.6.0",
     "node-telegram-bot-api": "^0.65.1",
-    "nodemon": "^3.1.0"
+    "nodemon": "^3.1.0",
+    "pump": "^2.0.1"
   },
   "name": "pythonproject1",
   "version": "1.0.0",

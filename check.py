@@ -66,4 +66,3 @@ def cleaning(cleaning_list):
         clean = clean[n + 1:]
     return clean
 
-print('check stand by')
