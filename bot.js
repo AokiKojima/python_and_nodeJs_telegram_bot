@@ -67,7 +67,7 @@ bot.on('message', msg => {
         if (typeof text !== 'undefined') {
           const { spawn } = require('child_process');
         
-          // Путь к вашему файлу Python
+          // Путь к файлу Python
           const pythonScriptPath = 'links.py';
         
           // Аргументы для передачи в Python скрипт
